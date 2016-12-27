@@ -1,0 +1,5 @@
+node_modules/
+!node_modules/materiel-design-bootstrap/*
+.meteor/local
+npm-debug.log
+typings
