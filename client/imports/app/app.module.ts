@@ -3,6 +3,8 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { RouterModule } from '@angular/router';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { MaterialModule } from '@angular/material';
+import 'hammerjs';
 
 //Application specific elements
 import { AppComponent } from './app.component';
@@ -15,7 +17,8 @@ import { APP_ROUTES_DECLARATIONS } from './app.routes';
         BrowserModule,
         FormsModule,
         ReactiveFormsModule,
-        RouterModule.forRoot(APP_ROUTES_DECLARATIONS)
+        RouterModule.forRoot(APP_ROUTES_DECLARATIONS),
+        MaterialModule.forRoot()
     ],
     declarations:[
         AppComponent,

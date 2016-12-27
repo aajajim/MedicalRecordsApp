@@ -1,11 +1,13 @@
+<md-sidenav-container [class.m2app-dark]="isDarkTheme">
 <!-- Navigation Component here -->
-
+    <main-nav></main-nav>
 <!--/ Navigation Component here-->
 
 <!-- Main-Page here -->
-    <router-outlet></router-outlet>
+    <router-outlet class="my-content"></router-outlet>
 <!--/ Main-Page here-->
 
 <!-- Footer here -->
 
 <!--/ Footer here-->
+</md-sidenav-container>

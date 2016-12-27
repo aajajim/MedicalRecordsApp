@@ -8,7 +8,10 @@
     "emitDecoratorMetadata": true,
     "removeComments": false,
     "noImplicitAny": false,
-    "sourceMap": true
+    "sourceMap": true,
+    "types": [
+      "hammerjs"
+    ]
   },
   "exclude": [
     "node_modules"

@@ -9,4 +9,5 @@ import style from './app.component.scss';
     styles: [ style ]
 })
 export class AppComponent {
+    isDarkTheme: boolean = false;
 }
