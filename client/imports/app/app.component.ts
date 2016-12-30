@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { ToolbarContentComponent } from './components/toolbar-content.component';
 
 import template from './app.component.html';
 import style from './app.component.scss';
@@ -9,5 +10,10 @@ import style from './app.component.scss';
     styles: [ style ]
 })
 export class AppComponent {
-    isDarkTheme: boolean = false;
+    isDarkTheme : boolean = false;
+    
+    onDarkThemeNotify(message:boolean):void{
+        this.isDarkTheme = message;
+    }
+
 }

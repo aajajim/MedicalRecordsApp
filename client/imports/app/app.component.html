@@ -7,12 +7,12 @@
             <button class="app-icon-button" (click)="sidenav.toggle()">
                 <i class="material-icons app-toolbar-menu">menu</i>
             </button>
-            <toolbar-content></toolbar-content>
+            <toolbar-content (notifyDarkTheme)='onDarkThemeNotify($event)'></toolbar-content>
         </md-toolbar>
     <!--/ Navigation Component here-->
 
     <!-- Main-Page here -->
-        <router-outlet class="my-content"></router-outlet>
+        <router-outlet></router-outlet>
     <!--/ Main-Page here-->
 
     <!-- Footer here -->
