@@ -1,18 +1,7 @@
-md-sidenav-container, router-outlet{
+html, body, md-sidenav-container, router-outlet{
   margin: 0;
   width: 100%;
   height: 100%;
-}
-
-md-sidenav-container.page-content{
-  display: block;
-  flex-direction: column;
-  position: relative;
-  overflow: auto;
-}
-
-.page-content footer {
-     height: 271px;
 }
 
 toolbar-content{
@@ -23,8 +12,7 @@ toolbar-content{
   flex: 1 1 auto;
 }
 
-md-sidenav-container.m2app-dark {
-  color: white;
+md-sidenav-layout.m2app-dark {
   background: black;
 }
 

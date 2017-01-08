@@ -1,6 +1,5 @@
 <md-sidenav-container [class.m2app-dark]="isDarkTheme">
     <!-- Navigation Component here -->
-    <header>
         <md-sidenav mode="side" class="main-sidenav" #sidenav>
             <sidenav-content></sidenav-content>
         </md-sidenav>
@@ -10,20 +9,13 @@
             </button>
             <toolbar-content (notifyDarkTheme)='onDarkThemeNotify($event)'></toolbar-content>
         </md-toolbar>
-    </header>
     <!--/ Navigation Component here-->
-    
-    <div class="page-content">
-        <!-- Main-Page here -->
-        <main>
-            <router-outlet></router-outlet>
-        </main>
-        <!--/ Main-Page here-->
-        <p>jkhdfgkhsdkfghs</p>
-        <!-- Footer here -->
-        <footer>
-            <main-footer></main-footer>
-        </footer>
-        <!--/ Footer here-->
-    </div>
+
+    <!-- Main-Page here -->
+        <router-outlet></router-outlet>
+    <!--/ Main-Page here-->
+
+    <!-- Footer here -->
+
+    <!--/ Footer here-->
 </md-sidenav-container>

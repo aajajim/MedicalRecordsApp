@@ -1,6 +1,11 @@
 /* CSS declarations go here */
 @import '{}/node_modules/@angular/material/core/theming/prebuilt/deeppurple-amber.scss';
 
+body, app {
+  margin: 0;
+  width: 100%;
+  height: 100%;
+}
 // NOTE: Theming is currently experimental and not yet publically released!
 
 @include md-core();
@@ -20,8 +25,4 @@ $theme: md-light-theme($primary, $accent);
   $dark-theme: md-dark-theme($dark-primary, $dark-accent, $dark-warn);
 
   @include angular-material-theme($dark-theme);
-}
-
-body, app {
-  margin: 0;
 }
