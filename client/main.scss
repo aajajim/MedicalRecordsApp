@@ -16,12 +16,12 @@ $theme: md-light-theme($primary, $accent);
   $dark-primary: md-palette($md-pink, 700, 500, 900);
   $dark-accent:  md-palette($md-blue-grey, A200, A100, A400);
   $dark-warn:    md-palette($md-deep-orange);
+
   $dark-theme: md-dark-theme($dark-primary, $dark-accent, $dark-warn);
+
   @include angular-material-theme($dark-theme);
 }
 
-body, html, app{
-  margin:0;
-  width: 100%;
-  height: 100%;
+body, app {
+  margin: 0;
 }

@@ -3,11 +3,8 @@
     <header>
         <md-sidenav mode="side" class="main-sidenav" #sidenav>
             <sidenav-content></sidenav-content>
-            <button (click)="sidenav.toggle()">
-                <i class="material-icons app-toolbar-menu">menu</i>
-            </button>
         </md-sidenav>
-        <md-toolbar class="elevated-toolbar" color="primary">
+        <md-toolbar color="primary">
             <button class="app-icon-button" (click)="sidenav.toggle()">
                 <i class="material-icons app-toolbar-menu">menu</i>
             </button>
@@ -15,17 +12,18 @@
         </md-toolbar>
     </header>
     <!--/ Navigation Component here-->
-
-    <!-- Main-Page here -->
-    <main>
-        <router-outlet></router-outlet>
-    </main>
-    <!--/ Main-Page here-->
-
-    <!-- Footer here -->
-    <footer>
-        <main-footer></main-footer>
-    </footer>
-    <!--/ Footer here-->
+    
+    <div class="page-content">
+        <!-- Main-Page here -->
+        <main>
+            <router-outlet></router-outlet>
+        </main>
+        <!--/ Main-Page here-->
+        <p>jkhdfgkhsdkfghs</p>
+        <!-- Footer here -->
+        <footer>
+            <main-footer></main-footer>
+        </footer>
+        <!--/ Footer here-->
+    </div>
 </md-sidenav-container>
-

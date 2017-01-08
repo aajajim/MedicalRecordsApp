@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { ToolbarContentComponent } from './components/toolbar-content.component';
 
 import template from './app.component.html';
 import style from './app.component.scss';
