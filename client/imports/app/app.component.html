@@ -1,21 +1,21 @@
 <md-sidenav-container [class.m2app-dark]="isDarkTheme">
     <!-- Navigation Component here -->
-        <md-sidenav mode="side" class="main-sidenav" #sidenav>
-            <sidenav-content></sidenav-content>
+        <md-sidenav mode="side" class="app-sidenav-conainer" #sidenav>
+            <app-sidenav></app-sidenav>
         </md-sidenav>
-        <md-toolbar color="primary">
+        <md-toolbar class="app-toolbar-conainer" color="primary">
             <button class="app-icon-button" (click)="sidenav.toggle()">
                 <i class="material-icons app-toolbar-menu">menu</i>
             </button>
-            <toolbar-content (notifyDarkTheme)='onDarkThemeNotify($event)'></toolbar-content>
+            <app-toolbar (notifyDarkTheme)='onDarkThemeNotify($event)'></app-toolbar>
         </md-toolbar>
     <!--/ Navigation Component here-->
 
     <!-- Main-Page here -->
-        <router-outlet></router-outlet>
+        <router-outlet class="app-main-container"></router-outlet>
     <!--/ Main-Page here-->
 
     <!-- Footer here -->
-        <main-footer class="footer"></main-footer>
+        <app-footer class="app-footer-container"></app-footer>
     <!--/ Footer here-->
 </md-sidenav-container>

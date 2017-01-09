@@ -2,15 +2,15 @@
 import { Component, Output, EventEmitter } from '@angular/core';
 
 //Template & Style
-import template from '../templates/toolbar-content.component.html';
-import style from '../styles/toolbar-content.component.scss';
+import template from './app-toolbar.component.html';
+import style from './app-toolbar.component.scss';
 
 @Component({
-    selector: 'toolbar-content',
+    selector: 'app-toolbar',
     template,
     styles: [ style ]
 })
-export class ToolbarContentComponent {
+export class AppToolbarComponent {
     isDarkTheme: boolean = false;
     @Output() notifyDarkTheme:EventEmitter<boolean> = new EventEmitter<boolean>();
     

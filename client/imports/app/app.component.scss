@@ -3,15 +3,10 @@ md-sidenav-container, router-outlet{
   width: 100%;
   height: 100%
 }
-
-.footer {
-  height: 248px;
-  position:absolute;
-  bottom:0px;
-  width:100%;
-  padding-top:25px;
+md-sidenav-container.m2app-dark {
+  color: white;
+  background: black;
 }
-
 toolbar-content{
   align-items:center;
   box-sizing:border-box;
@@ -20,24 +15,18 @@ toolbar-content{
   flex: 1 1 auto;
 }
 
-md-sidenav-container.m2app-dark {
-  color: white;
-  background: black;
-}
-
-.main-sidenav {
+/* Header styles */
+.app-sidenav-conainer {
   padding: 10px;
   min-width: 100px;
 }
-
-.elevated-toolbar{
+.app-toolbar-conainer{
   box-shadow: 0 3px 5px -1px rgba(0,0,0,.2), 0 6px 10px 0 rgba(0,0,0,.14), 0 1px 18px 0 rgba(0,0,0,.12);
 }
 .app-toolbar-menu {
   padding: 0 14px 0 14px;
   color: white;
 }
-
 .app-icon-button {
   box-shadow: none;
   user-select: none;
@@ -54,3 +43,19 @@ md-sidenav-container.m2app-dark {
   text-align: left;
   text-decoration: none;
 }
+
+/* Main container styles */
+.app-main-container {
+  margin: 20px;
+}
+
+/* Footer styles */
+.app-footer-container {
+  height: 248px;
+  position:absolute;
+  bottom:0px;
+  width:100%;
+  padding-top:20px;
+}
+
+/* Additional elements styles */
