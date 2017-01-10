@@ -23,4 +23,4 @@ So in order to see the result, you just need to start your browser and navigate 
 The file updatePackages.cmd is intented to update both Meteor and Npm packages. If your working on Unix machine, then just change the extension to .sh and make the file executable with command ``chmod +x updatePackages.sh``
 
 ## Get in touch
-If you have any question, remark or suggestion on how to improuve this web app startup, please do not to send me an email at mohammed.aajaji.freelance@gmail.com.
+If you have any question, remark or suggestion on how to improve this web app startup, please do not hesitate to send me an email at mohammed.aajaji.freelance@gmail.com
