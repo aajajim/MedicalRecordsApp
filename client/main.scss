@@ -1,15 +1,10 @@
-/* CSS declarations go here */
-@import '{}/node_modules/@angular/material/core/all-theme';
-
-// NOTE: Theming is currently experimental and not yet publically released!
+@import '{}/node_modules/@angular/material/core/theming/all-theme';
 
 @include mat-core();
-
-$primary:  mat-palette(#475b6c);
-$accent: mat-palette(#4fdb96);
-
-$theme: mat-light-theme($primary, $accent);
-
+$primary: mat-palette($mat-blue-grey, 800);
+$accent:  mat-palette($mat-light-green, 600, A100, A400);
+$warn:    mat-palette($mat-red, 600);
+$theme: mat-dark-theme($primary, $accent, $warn);
 @include angular-material-theme($theme);
 
 body, html, app{
