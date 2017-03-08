@@ -1,0 +1,25 @@
+.side-nav-content{
+    height: 100%;
+    overflow-y: auto;
+    box-sizing: border-box;
+}
+
+.side-nav-content h3{
+    border: none;
+    font-size: 14px;
+    letter-spacing: 1px;
+    line-height: 24px;
+    text-transform: uppercase;
+    font-weight: 400;
+    margin: 0;
+    padding: 0 16px;
+    background-color: darkgrey;
+    background-size: auto;
+    color: black;
+}
+
+.profile-image{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+}
