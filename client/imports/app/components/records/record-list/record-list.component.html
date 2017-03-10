@@ -1,0 +1,12 @@
+<div class="record-list-container">
+    <!-- Row of three elements -->
+        <div class="row">
+            <div *ngFor="let rec of records | async; let i=index">
+                <div class="clearfix" *ngIf="i%3 === 0"></div>
+                <div class="col-md-4">
+                    <record-card [rec]="rec"></record-card>
+                </div>
+            </div>
+        </div>
+    <!--/ Row of three elements -->
+</div

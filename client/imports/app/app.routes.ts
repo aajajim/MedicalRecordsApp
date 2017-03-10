@@ -3,6 +3,7 @@ import { Route } from '@angular/router';
 
 //Application modules to route to
 import { AppMainComponent } from './components';
+import { APP_COMPONENTS_DECLARATIONS } from './components';
 
 //Exported routes
 export const APP_ROUTES_DECLARATIONS:Route[] = [
