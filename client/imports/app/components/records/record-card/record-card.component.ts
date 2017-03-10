@@ -13,5 +13,5 @@ import style from './record-card.component.scss';
     styles: [ style ]
 })
 export class  RecordCardComponent {
-    @Input() pr: Observable<Record>;
+    @Input() rec: Observable<Record>;
 }

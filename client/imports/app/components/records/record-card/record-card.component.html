@@ -1,18 +1,17 @@
 <md-card class="card-class">
-    <md-card-header class=card-header-class"">
+    <md-card-header class="card-header-class">
         <md-card-title>{{rec.recordCategory}}</md-card-title>
         <md-card-subtitle>
-            <div>{{rec.recordSubCategory}}Orthondentie/Generalist/ORL</div>
-            <div>{{rec.recordDateTime}}13/02/2017 10:36</div>
+            <div>{{rec.recordSubCategory}}</div>
+            <div>{{rec.recordDateTime}}</div>
         </md-card-subtitle>
     </md-card-header>
     <md-card-content class="card-content-class">
-        <div>{{rec.recordPraticient}}Dr. Nicolas DUPONT</div>
-        <div>{{rec.recordDiagnosis}}Diagnosis: Flue</div>
-        <div>{{rec.recordIsRefunded}}Refund Status: OK</div>
-        <div></div>
+        <div>{{rec.recordPraticient}}D</div>
+        <div>{{rec.recordDiagnosis}}</div>
+        <div>{{rec.recordIsRefunded}}</div>
     </md-card-content>
-    <md-card-action class="card-action-class">
-        <a md-button-raised [routerlink]="['/record-details', rec._id]">Details</a>
-    </md-card-action>
+    <md-card-actions class="card-action-class">
+        <a md-button-raised [routerLink]="['/record-details', rec._id]">Details</a>
+    </md-card-actions>
 </md-card>

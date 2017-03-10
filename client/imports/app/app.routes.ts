@@ -14,5 +14,6 @@ export const APP_ROUTES_DECLARATIONS:Route[] = [
     {path: 'persona-data', component: AppMainComponent},
     {path: 'security', component: AppMainComponent},
     {path: 'usage-conditions', component: AppMainComponent},
+    {path: 'record-details/:recId', component: AppMainComponent},
     {path: 'router-link', component: AppMainComponent}
 ];
